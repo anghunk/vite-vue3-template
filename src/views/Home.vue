@@ -7,7 +7,7 @@
       <img src="@/assets/images/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="vite-vue3-template" />
+  <HelloWorld msg="Vite Vue3 Template" />
 </template>
 
 <script>
