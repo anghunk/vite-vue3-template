@@ -3,17 +3,29 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 
-import '@/assets/style/tailwind.css';
+// 样式导入
+import '@/assets/styles/base/reset.css';
+import '@/assets/styles/base/variables.css';
+import '@/assets/styles/base/common.css';
+import '@/assets/styles/tailwind.css';
+import '@/assets/styles/index.less';
 
-// ElementPlus
-import ElementPlus from 'element-plus';
-import 'element-plus/dist/index.css';
-import '@/assets/style/element-variables.scss';
+// 插件
+import setupPlugins from './plugins';
 
-import '@/assets/style/index.less';
+// 自定义指令
+import setupDirectives from './directives';
 
 const app = createApp(App);
-app.use(ElementPlus);
+
+// 注册插件
+setupPlugins(app);
+
+// 注册自定义指令
+setupDirectives(app);
+
+// 注册路由和状态管理
 app.use(router);
 app.use(store);
+
 app.mount('#app');
