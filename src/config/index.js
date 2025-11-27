@@ -4,7 +4,7 @@
 
 export default {
 	// 应用标题
-	title: 'vite-vue3-template',
+	title: 'Vite Vue3 Template',
 	
 	// 版本号
 	version: '1.0.0',
