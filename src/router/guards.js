@@ -1,10 +1,4 @@
 /**
- * 路由守卫配置
- */
-
-import config from '@/config';
-
-/**
  * 全局前置守卫
  */
 export function setupRouterGuards(router) {
@@ -12,9 +6,7 @@ export function setupRouterGuards(router) {
 	router.beforeEach((to, from, next) => {
 		// 设置页面标题
 		if (to.meta.title) {
-			document.title = to.meta.title + ' - ' + config.title;
-		} else {
-			document.title = config.title;
+			document.title = to.meta.title;
 		}
 
 		// 示例：权限验证

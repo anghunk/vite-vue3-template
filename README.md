@@ -19,10 +19,6 @@ src/
 ├── api/              # API 接口管理
 ├── assets/           # 静态资源
 ├── components/       # 公共组件
-├── composables/      # 组合式函数
-├── config/           # 配置文件
-├── constants/        # 常量定义
-├── directives/       # 自定义指令
 ├── layouts/          # 布局组件
 ├── plugins/          # 插件
 ├── router/           # 路由配置

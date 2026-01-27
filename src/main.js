@@ -13,16 +13,10 @@ import '@/assets/styles/index.less';
 // 插件
 import setupPlugins from './plugins';
 
-// 自定义指令
-import setupDirectives from './directives';
-
 const app = createApp(App);
 
 // 注册插件
 setupPlugins(app);
-
-// 注册自定义指令
-setupDirectives(app);
 
 // 注册路由和状态管理
 app.use(router);
