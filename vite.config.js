@@ -108,6 +108,7 @@ export default defineConfig(({ mode }) => {
 				},
 				// SCSS 配置
 				scss: {
+					api: 'modern-compiler',
 					additionalData: '@import "@/assets/styles/base/variables.css";',
 				},
 			},

@@ -9,7 +9,7 @@
       https://github.com/anghunk/vite-vue3-template
     </a>
   </p>
-  <p>已经引入 vuex，router，axios，element-plus，less，tailwindcss 等开发工具</p>
+  <p>已经引入 vuex，router，axios，element-plus，less 等开发工具</p>
 </template>
 
 <script>

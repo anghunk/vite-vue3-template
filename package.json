@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "rf": "rimraf dist && rimraf node_modules",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -22,9 +21,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.2",
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.44",
     "sass": "^1.77.8",
-    "tailwindcss": "^3.4.10",
     "unplugin-vue-components": "^0.22.4",
     "vite": "^5.4.1"
   }
