@@ -1,38 +1,8 @@
-/* 通用样式 */
-
 /* 清除浮动 */
 .clearfix::after {
   content: '';
   display: block;
   clear: both;
-}
-
-/* 文本省略 */
-.text-ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.text-ellipsis-2 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* 布局 */
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 /* 滚动条样式 */

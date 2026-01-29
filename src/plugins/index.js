@@ -8,5 +8,4 @@ export default function setupPlugins(app) {
 	// 注册 Element Plus
 	setupElementPlus(app);
 	
-	// 可以在这里注册其他插件
 }

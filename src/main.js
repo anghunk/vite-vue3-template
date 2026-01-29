@@ -7,7 +7,7 @@ import store from './store';
 import '@/assets/styles/base/reset.css';
 import '@/assets/styles/base/variables.css';
 import '@/assets/styles/base/common.css';
-import '@/assets/styles/tailwind.css';
+import '@/assets/styles/base/tailwind.css';
 import '@/assets/styles/index.less';
 
 // 插件

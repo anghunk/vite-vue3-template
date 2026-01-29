@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import HelloWorld from "@/components/common/HelloWorld.vue";
+import HelloWorld from "@/components/HelloWorld.vue";
 export default {
   components: {
     HelloWorld,
@@ -25,6 +25,7 @@ export default {
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  color: var(--danger-color);
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);

@@ -6,7 +6,7 @@ const storage = {
 	/**
 	 * 设置localStorage
 	 */
-	set(key, value) {
+	setLocalStorage(key, value) {
 		try {
 			localStorage.setItem(key, JSON.stringify(value));
 		} catch (error) {
@@ -17,7 +17,7 @@ const storage = {
 	/**
 	 * 获取localStorage
 	 */
-	get(key) {
+	getLocalStorage(key) {
 		try {
 			const value = localStorage.getItem(key);
 			return value ? JSON.parse(value) : null;
@@ -30,7 +30,7 @@ const storage = {
 	/**
 	 * 删除localStorage
 	 */
-	remove(key) {
+	removeLocalStorage(key) {
 		try {
 			localStorage.removeItem(key);
 		} catch (error) {
@@ -41,7 +41,7 @@ const storage = {
 	/**
 	 * 清空localStorage
 	 */
-	clear() {
+	clearLocalStorage() {
 		try {
 			localStorage.clear();
 		} catch (error) {

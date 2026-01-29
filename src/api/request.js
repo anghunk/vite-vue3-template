@@ -3,7 +3,7 @@ import { ElMessage } from 'element-plus';
 
 // 创建axios实例
 const service = axios.create({
-	baseURL: import.meta.env.VITE_APP_BASE_API || '/api',
+	baseURL: import.meta.env.VITE_APP_BASE_API,
 	timeout: 15000,
 	headers: {
 		'Content-Type': 'application/json;charset=UTF-8',
@@ -24,7 +24,7 @@ service.interceptors.request.use(
 		// 对请求错误做些什么
 		console.error('请求错误：', error);
 		return Promise.reject(error);
-	}
+	},
 );
 
 // 响应拦截器
@@ -54,36 +54,16 @@ service.interceptors.response.use(
 	},
 	(error) => {
 		console.error('响应错误：', error);
-		
+
 		// 处理HTTP状态码错误
 		if (error.response) {
-			switch (error.response.status) {
-				case 400:
-					ElMessage.error('请求参数错误');
-					break;
-				case 401:
-					ElMessage.error('未授权，请登录');
-					localStorage.removeItem('token');
-					window.location.href = '/login';
-					break;
-				case 403:
-					ElMessage.error('拒绝访问');
-					break;
-				case 404:
-					ElMessage.error('请求地址不存在');
-					break;
-				case 500:
-					ElMessage.error('服务器内部错误');
-					break;
-				default:
-					ElMessage.error('网络错误');
-			}
+			ElMessage.error(error.response.status);
 		} else {
 			ElMessage.error('网络连接失败');
 		}
 
 		return Promise.reject(error);
-	}
+	},
 );
 
 export default service;

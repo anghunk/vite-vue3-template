@@ -12,28 +12,3 @@ export function login(data) {
 		data,
 	});
 }
-
-// 用户登出
-export function logout() {
-	return request({
-		url: '/user/logout',
-		method: 'post',
-	});
-}
-
-// 获取用户信息
-export function getUserInfo() {
-	return request({
-		url: '/user/info',
-		method: 'get',
-	});
-}
-
-// 更新用户信息
-export function updateUserInfo(data) {
-	return request({
-		url: '/user/update',
-		method: 'put',
-		data,
-	});
-}

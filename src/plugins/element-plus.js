@@ -4,7 +4,7 @@
 
 import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css';
-import '@/assets/styles/element-variables.scss';
+import '@/assets/styles/base/element-variables.scss';
 
 export default function setupElementPlus(app) {
 	app.use(ElementPlus);
